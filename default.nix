@@ -3,6 +3,7 @@ let
         url = "https://github.com/digitallyinduced/ihp.git";
         rev = "4e2ec6744da2a2a99959a782e9965bcb6b3e2d50";
     };
+
     haskellEnv = import "${ihp}/NixSupport/default.nix" {
         ihp = ihp;
         haskellDeps = p: with p; [
